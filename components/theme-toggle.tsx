@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import { Button } from "@/components/ui/button";
+
 type Theme = "light" | "dark";
 
 function applyTheme(theme: Theme) {
@@ -30,13 +32,14 @@ export function ThemeToggle() {
   }, [theme]);
 
   return (
-    <button
+    <Button
       type="button"
+      variant="outline"
+      size="sm"
       onClick={() => setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"))}
       aria-label={`Activate ${theme === "light" ? "dark" : "light"} mode`}
-      className="inline-flex h-10 items-center rounded-lg border border-(--border) bg-(--surface) px-3 text-sm font-medium text-(--foreground) transition hover:bg-black/5 dark:hover:bg-white/5"
     >
       Toggle Theme
-    </button>
+    </Button>
   );
 }

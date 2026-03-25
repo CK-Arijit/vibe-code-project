@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { ThemeToggle } from "@/components/theme-toggle";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function DashboardLayout({
   children,
@@ -17,10 +18,7 @@ export default function DashboardLayout({
           </div>
           <div className="flex items-center gap-2">
             <ThemeToggle />
-            <Link
-              href="/login"
-              className="rounded-lg border border-(--border) px-3 py-2 text-sm font-medium text-(--foreground) transition hover:bg-black/5 dark:hover:bg-white/5"
-            >
+            <Link href="/login" className={buttonVariants({ variant: "outline", size: "sm" })}>
               Logout
             </Link>
           </div>
