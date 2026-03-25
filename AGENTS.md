@@ -31,7 +31,8 @@ Before opening a PR, run `npm run lint && npm run build`.
 - Components: PascalCase file names for feature blocks are acceptable (current repo uses kebab-case filenames with PascalCase exports; follow nearby patterns).
 - Variables/functions: `camelCase`; types/interfaces: `PascalCase`.
 - Styling: Tailwind utility classes and CSS variables in `app/globals.css`.
-- UI components: Any helper UI components should always start with captial letter (for example: components/ui/Button.tsx)
+- First priority - Always try to use shadcn components instead of creating custom UI components. If any shadcn component give issue then use custom ui components
+- Add shadcn primitives (example: Input, Label, Alert, etc.) whenever it is required
 
 Keep modules focused. Prefer small reusable components over large page-level JSX blocks.
 
