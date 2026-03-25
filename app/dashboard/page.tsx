@@ -17,7 +17,7 @@ export default function DashboardPage() {
         <AccountOverview data={sampleData} />
         <aside className="space-y-4">
           <Card>
-            <CardContent className="p-5">
+            <CardContent className="p-5 pt-5">
               <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-(--secondary)">
                 Access State
               </h2>
@@ -27,7 +27,7 @@ export default function DashboardPage() {
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="p-5">
+            <CardContent className="p-5 pt-5">
               <h2 className="text-sm font-semibold uppercase tracking-[0.15em] text-(--secondary)">
                 Data Policy
               </h2>
