@@ -7,13 +7,13 @@ type AccountOverviewProps = {
 
 export function AccountOverview({ data }: AccountOverviewProps) {
   return (
-    <section className="rounded-2xl border bg-[var(--surface)] p-5 shadow-lg shadow-sky-900/10 sm:p-6">
+    <section className="rounded-2xl border bg-(--surface) p-5 shadow-lg shadow-sky-900/10 sm:p-6">
       <div className="border-b pb-5">
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--secondary)]">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-(--secondary)">
           Account Details
         </p>
-        <h2 className="mt-2 text-2xl font-semibold text-[var(--primary)]">Read-only Contact Snapshot</h2>
-        <p className="mt-2 text-sm text-[var(--muted)]">
+        <h2 className="mt-2 text-2xl font-semibold text-(--primary)">Read-only Contact Snapshot</h2>
+        <p className="mt-2 text-sm text-(--muted)">
           Contact information will be mapped from Salesforce after backend integration is wired.
         </p>
       </div>

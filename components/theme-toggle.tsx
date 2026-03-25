@@ -34,7 +34,7 @@ export function ThemeToggle() {
       type="button"
       onClick={() => setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"))}
       aria-label={`Activate ${theme === "light" ? "dark" : "light"} mode`}
-      className="inline-flex h-10 items-center rounded-lg border border-[var(--border)] bg-[var(--surface)] px-3 text-sm font-medium text-[var(--foreground)] transition hover:bg-black/5 dark:hover:bg-white/5"
+      className="inline-flex h-10 items-center rounded-lg border border-(--border) bg-(--surface) px-3 text-sm font-medium text-(--foreground) transition hover:bg-black/5 dark:hover:bg-white/5"
     >
       Toggle Theme
     </button>
