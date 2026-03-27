@@ -16,7 +16,7 @@ export function AccountOverview({ data }: AccountOverviewProps) {
         </p>
         <CardTitle>Read-only Contact Snapshot</CardTitle>
         <CardDescription>
-          Contact information will be mapped from Salesforce after backend integration is wired.
+          Contact information mapped from Salesforce contact data.
         </CardDescription>
       </CardHeader>
 
